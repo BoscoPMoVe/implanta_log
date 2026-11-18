@@ -7,24 +7,20 @@ Pedro Guillermo Moguel Vela · Ingeniería en Sistemas · Universidad Anáhuac M
 
 ## Estructura
 
-```
 lib/
-├── main.dart          rutas y tema
-├── modelos/           clase Visita (datos + toMap/fromMap)
-├── datos/             SQLite
-├── servicios/         cámara, micrófono, GPS
-├── pantallas/         lista, detalle, formulario, acerca de
-├── widgets/           menú lateral y foto
-└── utilidades/        errores y mensajes
-```
+main.dart        rutas y tema
+modelos/         clase Visita
+datos/           SQLite
+servicios/       cámara, micrófono y GPS
+pantallas/       lista, detalle, formulario, acerca de
+widgets/         menú lateral y foto
+utilidades/      errores y mensajes
 
 ## Cómo correrlo
 
-```bash
-flutter create . --org mx.anahuac --project-name implanta_log --platforms android,ios
-./tool/configure_platforms.sh
 flutter pub get
 flutter run
-```
 
-El script agrega los permisos de cámara, micrófono y ubicación en Android e iOS.
+## Permisos (android/app/src/main/AndroidManifest.xml)
+
+INTERNET, RECORD_AUDIO, ACCESS_FINE_LOCATION y ACCESS_COARSE_LOCATION.
