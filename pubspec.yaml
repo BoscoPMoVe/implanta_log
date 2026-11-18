@@ -1,0 +1,40 @@
+name: implanta_log
+description: Bitácora de visitas para consultores que implementan sistemas integrados (ERP, CRM).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Base de datos local
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # Cámara y galería
+  image_picker: ^1.1.2
+
+  # Micrófono (voz a texto)
+  speech_to_text: ^7.0.0
+
+  # GPS y mapas
+  geolocator: ^13.0.2
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  url_launcher: ^6.3.1
+
+  # Para dar formato a las fechas
+  intl: ^0.19.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
